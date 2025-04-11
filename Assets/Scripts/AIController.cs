@@ -8,9 +8,13 @@ public class AIController : MonoBehaviour
     [SerializeField]
     private float lifeTime = 5.0f;
 
+    [SerializeField]
+    private int[] speedArray = {10, 15, 20};
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        RandomVehicleSpeed();
         Destroy(this.gameObject, lifeTime);
     }
 
@@ -18,5 +22,10 @@ public class AIController : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.forward * Time.deltaTime *  vehicleSpeed);
+    }
+
+    private void RandomVehicleSpeed()
+    {
+        vehicleSpeed = Random.Range(10, speedArray.Length);
     }
 }

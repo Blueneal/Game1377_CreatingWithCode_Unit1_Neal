@@ -77,5 +77,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 245a9f341560b8b4a92fe8aaeddc0324, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicleSpeed: 20
+  vehicleSpeed: 0
   lifeTime: 10
+  speedArray: 0a0000000f00000014000000
